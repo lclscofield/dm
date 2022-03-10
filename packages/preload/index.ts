@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import fs from 'fs'
 import { contextBridge, ipcRenderer } from 'electron'
 
 /** dom 准备完毕 */
@@ -22,7 +21,6 @@ function domReady (condition: DocumentReadyState[] = ['complete', 'interactive']
 })()
 
 // --------- 向 Renderer 进程公开一些 API ---------
-// contextBridge.exposeInMainWorld('fs', fs)
 contextBridge.exposeInMainWorld('ipcRenderer', withPrototype(ipcRenderer))
 
 // `exposeInMainWorld` 无法检测 `prototype` 的属性和方法，手动修复
