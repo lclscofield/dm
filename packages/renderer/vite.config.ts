@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
-import electron from 'vite-plugin-electron-renderer'
 import pkg from '../../package.json'
 
 // https://vitejs.dev/config/
@@ -14,8 +13,6 @@ export default defineConfig({
         vue({
             reactivityTransform: true, // 显式启用响应性语法糖
         }),
-        // electron 插件，可以 import electron
-        electron(),
     ],
     resolve: {
         // 别名

@@ -33,7 +33,6 @@
         "typescript": "^4.6.2",
         "unplugin-vue-components": "^0.17.21",
         "vite": "^2.8.6",
-        "vite-plugin-electron-renderer": "^0.1.4",
         "vue": "^3.2.31",
         "vue-eslint-parser": "^8.3.0",
         "vue-tsc": "^0.32.1"

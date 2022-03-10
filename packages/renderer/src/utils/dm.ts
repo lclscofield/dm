@@ -5,8 +5,8 @@
 // import { createRequire } from 'module'
 // const require = createRequire(import.meta.url)
 // const { ipcRenderer } = require('electron')
-import { ipcRenderer } from 'electron'
+// import { ipcRenderer } from 'electron'
 
 export default async function (method: string, args: any[]) {
-    return await ipcRenderer.invoke('dm', method, args)
+    return await window.ipcRenderer.invoke('dm', method, args)
 }
