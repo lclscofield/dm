@@ -6,6 +6,7 @@ export default defineConfig({
     root: __dirname,
     build: {
         outDir: '../../dist/preload',
+        emptyOutDir: true,
         lib: {
             entry: 'index.ts',
             formats: ['cjs'],

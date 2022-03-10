@@ -6,7 +6,11 @@
     "main": "dist/main/index.cjs",
     "scripts": {
         "dev": "node scripts/dev.mjs",
-        "build": "electron-builder --ia32"
+        "build": "electron-builder --ia32",
+        "typecheck": "vue-tsc --project packages/renderer/tsconfig.json --noEmit",
+        "prebuild": "npm run typecheck && node scripts/build.mjs",
+        "init": "git config core.hooksPath .git/hooks/ && rm -rf .git/hooks && npx simple-git-hooks",
+        "debug": "npm run prebuild && vite ./packages/renderer"
     },
     "server": {
         "host": "127.0.0.1",
