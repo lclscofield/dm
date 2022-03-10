@@ -1,0 +1,45 @@
+{
+    "name": "dm",
+    "version": "0.1.0",
+    "description": "",
+    "author": "lclscofield",
+    "main": "dist/main/index.cjs",
+    "scripts": {
+        "dev": "node scripts/dev.mjs",
+        "build": "electron-builder --ia32"
+    },
+    "server": {
+        "host": "127.0.0.1",
+        "port": 9999
+    },
+    "dependencies": {
+        "winax": "^3.3.4"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.21",
+        "@typescript-eslint/eslint-plugin": "^5.14.0",
+        "@typescript-eslint/parser": "^5.14.0",
+        "@vitejs/plugin-vue": "^2.2.4",
+        "electron": "^14.2.6",
+        "electron-builder": "^22.14.13",
+        "eslint": "^8.10.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^6.0.0",
+        "eslint-plugin-vue": "^8.5.0",
+        "sass": "^1.49.9",
+        "sass-loader": "^12.6.0",
+        "typescript": "^4.6.2",
+        "unplugin-vue-components": "^0.17.21",
+        "vite": "^2.8.6",
+        "vite-plugin-electron-renderer": "^0.1.4",
+        "vue": "^3.2.31",
+        "vue-eslint-parser": "^8.3.0",
+        "vue-tsc": "^0.32.1"
+    },
+    "engines": {
+        "node": "=14.17.0"
+    },
+    "license": "ISC"
+}
