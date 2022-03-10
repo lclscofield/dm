@@ -28,7 +28,7 @@ async function createWindow () {
         width: 1600,
         height: 1000,
         webPreferences: {
-            // preload: join(__dirname, '../preload/index.cjs'),
+            preload: join(__dirname, '../preload/index.cjs'),
             nativeWindowOpen: true,
         },
     })
