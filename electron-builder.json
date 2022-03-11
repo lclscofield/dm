@@ -7,6 +7,10 @@
     "files": [
         "dist"
     ],
+    "extraResources": {
+        "from": "./dist/main/resources",
+        "to": "./"
+    },
     "mac": {
         "artifactName": "${productName}_${version}.${ext}",
         "target": [

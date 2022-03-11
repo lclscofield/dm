@@ -16,6 +16,7 @@ function domReady (condition: DocumentReadyState[] = ['complete', 'interactive']
     })
 }
 
+// 等待 dom 准备完毕
 (async () => {
     await domReady()
 })()
